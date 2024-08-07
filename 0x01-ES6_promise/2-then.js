@@ -1,4 +1,3 @@
-// 2-then.js
 export default function handleResponseFromAPI(promise) {
   return promise
     .then(() => {
@@ -13,4 +12,3 @@ export default function handleResponseFromAPI(promise) {
       return new Error();
     });
 }
-
