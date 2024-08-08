@@ -28,13 +28,13 @@ export default class HolbertonCourse {
     }
     this._length = value;
   }
-  
+
   get students() {
     return this._students;
   }
 
   set students(value) {
-    if (!Array.isArray(value) || !value.every(student => typeof student === 'string')) {
+    if (!Array.isArray(value) || !value.every((student ) => typeof student === 'string')) {
       throw new TypeError('Students must be an array of strings');
     }
     this._students = value;
